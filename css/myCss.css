@@ -1,0 +1,28 @@
+.forAnimation {
+    position: absolute;
+    top: 4.375rem;
+    width: 14rem;
+    height: calc(100vh - 4.375rem);
+    overflow: hidden;
+}
+    
+.forAnimation .white {
+    position: relative;
+    left: 0rem;
+    width: 14rem;
+    height: 100%;
+    z-index: 10;
+    background-color: #fff;
+    animation: leftToRight .6s ease-out 0s 1 forwards;
+}
+
+
+@keyframes leftToRight {
+    0% {
+        left: 0rem;
+    }
+
+    100% {
+        left: 14rem;
+    }
+}
